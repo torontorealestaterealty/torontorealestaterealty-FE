@@ -8,6 +8,7 @@ import computerIcon from '../../assets/images/home/resources/computer.png';
 import checkmarkIcon from '../../assets/images/home/resources/checkmark.png';
 import suitcaseIcon from '../../assets/images/home/resources/suitcase.png';
 import homeHowBg from "../../assets/images/home/home-howBg.png";
+import Footer from "../../components/Footer/footer.jsx";
 
 export default function Home() {
     return (
@@ -99,7 +100,7 @@ export default function Home() {
         </div>
         </section>
 
-      {/* HOW IT WORKS STRIP */}
+        {/* HOW IT WORKS STRIP */}
         <section id="home-plans" className="home-how" style={{ backgroundImage: `url(${homeHowBg})` }}>
 
             <div className="home-container">
@@ -137,7 +138,7 @@ export default function Home() {
             </div>
         </section>
 
-{/* WHO WE WORK WITH (top card over image) */}
+        {/* WHO WE WORK WITH (top card over image) */}
         <section id="home-join" className="home-join" > 
         <div className="home-container home-join-grid"  >
 
@@ -197,30 +198,7 @@ export default function Home() {
 
 
       {/* FOOTER (simple) */}
-      <footer id="home-footer" className="home-footer">
-        <div className="home-container home-footer-wrap">
-          <div className="home-footer-col">
-            <div className="home-footer-brand">Toronto Real Estate Realty</div>
-            <div className="home-footer-muted">Independently owned and operated.</div>
-          </div>
-
-          <div className="home-footer-col">
-            <div className="home-footer-title">Address</div>
-            <div className="home-footer-muted">Toronto, ON</div>
-            <div className="home-footer-muted">Markham, ON</div>
-            <div className="home-footer-muted">Barrie, ON</div>
-          </div>
-
-          <div className="home-footer-col">
-            <div className="home-footer-title">Contact Us</div>
-            <div className="home-footer-muted">support@torontorealestaterealty.ca</div>
-          </div>
-        </div>
-
-        <div className="home-footer-bottom">
-          © {new Date().getFullYear()} Toronto Real Estate Realty. All Rights Reserved.
-        </div>
-      </footer>
+        <Footer />
 
       {/* anchor targets */}
       <div id="home-schedule" className="home-anchor" />
