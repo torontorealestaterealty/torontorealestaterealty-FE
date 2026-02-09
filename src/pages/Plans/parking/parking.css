@@ -1,0 +1,360 @@
+/* PlansOneSimplePage.css
+   Uses your theme vars from :root:
+   --gold-legacy, --gold-relentless, --gold-dark
+   --white, --grey-light, --grey-med, --grey-obsessed
+   --black, --black-digital, --container
+*/
+
+.plan-page{
+  background: var(--black);
+  color: var(--grey-light);
+}
+
+.plan-container{
+  width: min(var(--container), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+.plan-hero{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 92px 0 80px;
+  overflow: hidden;
+}
+
+.plan-heroOverlay{
+  position: absolute;
+  inset: 0;
+  
+}
+
+.plan-heroWrap{
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+}
+
+.plan-eyebrow{
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(190,175,135,.22);
+  color: rgba(230,231,232,.82);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.plan-heroTitle{
+  margin: 0 0 10px;
+  color: var(--white);
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.plan-heroSub{
+  margin: 0;
+  color: rgba(230,231,232,.82);
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+.plan-heroActions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.plan-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .01em;
+  transition: transform .12s ease, filter .12s ease, background .12s ease, border-color .12s ease;
+}
+
+.plan-btnGold{
+  color: rgba(0,0,0,.92);
+  background: linear-gradient(180deg, #c8a440, #cfbb82);
+  border: 1px solid rgba(255,199,44,.35);
+  box-shadow: 0 14px 34px rgba(0,0,0,.45);
+}
+
+.plan-btnGold:hover{ transform: translateY(-1px); filter: brightness(1.02); }
+
+.plan-btnOutline{
+  color: white;
+  background: rgba(18, 18, 18, 0.50);
+  border: 1px solid rgba(190,175,135,.30);
+}
+
+.plan-btnOutline:hover{ transform: translateY(-1px); border-color: rgba(255,199,44,.45); }
+
+.plan-heroNote{
+  margin-top: 14px;
+  color: rgba(190,175,135,.78);
+  font-size: 13px;
+}
+
+/* SECTION */
+.plan-section{
+  background: #f4f4f4;
+  padding: 70px 0;
+  color: rgba(0,0,0,.85);
+}
+
+/* TOP GRID */
+.plan-topGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.plan-highlight{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.12);
+}
+
+.plan-highlightTitle{
+  font-weight: 800;
+  color: rgba(0,0,0,.80);
+  margin-bottom: 10px;
+}
+
+.plan-priceRow{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.plan-price{
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: rgba(0,0,0,.90);
+}
+
+.plan-priceMeta{
+  color: rgba(0,0,0,.55);
+  font-weight: 700;
+}
+
+.plan-checkList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(0,0,0,.70);
+  line-height: 1.9;
+}
+
+.plan-checkList li{
+  padding-left: 26px;
+  position: relative;
+}
+
+.plan-checkList li::before{
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(255,199,44,.95);
+  font-weight: 900;
+}
+
+.plan-highlightDark{
+  background: linear-gradient(180deg, rgba(37, 37, 38, 0.62), rgba(18, 18, 18, 0.86));
+  border: 1px solid rgba(190,175,135,0.20);
+  color: rgba(230,231,232,.90);
+}
+
+.plan-highlightDark .plan-highlightTitle{ color: rgba(255,255,255,.92); }
+.plan-highlightDark .plan-miniSub{ color: rgba(230,231,232,.75); }
+
+.plan-feeTable{
+  margin-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: 12px;
+}
+
+.plan-feeRow{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.plan-feeLabel{
+  color: rgba(230,231,232,.82);
+}
+
+.plan-feeValue{
+  color: rgba(255,199,44,.92);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.plan-keepNote{
+  margin-top: 10px;
+  color: rgba(190,175,135,.82);
+  font-size: 13px;
+}
+
+/* CARDS */
+.plan-card{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 30px 28px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.12);
+  margin-top: 18px;
+}
+
+.plan-cardDark{
+  background: linear-gradient(180deg, rgba(37, 37, 38, 0.62), rgba(18, 18, 18, 0.86));
+  border: 1px solid rgba(190,175,135,0.20);
+  color: rgba(230,231,232,.90);
+}
+
+.plan-title{
+  margin: 0 0 14px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+}
+
+.plan-titleLight{ color: var(--white); }
+
+.plan-text{
+  margin: 16px auto 0;
+  max-width: 86ch;
+  color: rgba(0,0,0,.68);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.plan-cardDark .plan-title{ color: var(--white); }
+.plan-cardDark .plan-text{ color: rgba(230,231,232,.82); }
+
+/* Pills */
+.plan-pillGrid{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.plan-pill{
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.10);
+  color: rgba(0,0,0,.72);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Steps */
+.plan-steps{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.plan-step{
+  background: rgba(0,0,0,.22);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 18px 16px;
+}
+
+.plan-stepNum{
+  font-weight: 900;
+  letter-spacing: .10em;
+  color: rgba(255,199,44,.75);
+  margin-bottom: 10px;
+}
+
+.plan-stepTitle{
+  font-weight: 800;
+  color: rgba(255,255,255,.92);
+  margin-bottom: 6px;
+}
+
+.plan-stepText{
+  color: rgba(230,231,232,.78);
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.plan-cta{
+  margin-top: 18px;
+  border-radius: 22px;
+  padding: 30px 26px;
+  background: #ffffff;
+  border: 1px solid rgba(190,175,135,0.20);
+  box-shadow: 0 18px 60px rgba(0,0,0,.55);
+  text-align: center;
+  color: rgba(230,231,232,.90);
+}
+
+.plan-ctaTitle{
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 6px;
+}
+
+.plan-ctaSub{
+  color: rgba(0, 0, 0, .68);
+  margin-bottom: 14px;
+}
+
+.plan-ctaActions{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.plan-ctaFine{
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(190,175,135,.75);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .plan-topGrid{ grid-template-columns: 1fr; }
+  .plan-steps{ grid-template-columns: 1fr; }
+  .plan-heroTitle{ font-size: 38px; }
+}
+
+@media (max-width: 520px){
+  .plan-container{ width: min(var(--container), calc(100% - 32px)); }
+  .plan-hero{ padding: 78px 0 66px; }
+  .plan-price{ font-size: 38px; }
+}

@@ -1,0 +1,151 @@
+
+.cs-heroOverlay{
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.90) 0%, rgba(0,0,0,.62) 55%, rgba(0,0,0,.34) 100%),
+    linear-gradient(180deg, rgba(18,18,18,.72), rgba(0,0,0,.90));
+}
+
+.cs-card{ border-radius: 18px; }
+
+.cs-boardGrid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  margin: 18px auto 8px;
+}
+
+.cs-boardItem{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 14px 14px;
+  color: rgba(0,0,0,.75);
+  font-weight: 600;
+  text-align: left;
+}
+
+.cs-regionRow{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.cs-pill{
+  display:inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.10);
+  color: rgba(0,0,0,.70);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Dark two-column cards */
+.cs-twoCol{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.cs-darkCard{
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(37,37,38,0.62), rgba(18,18,18,0.82));
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 22px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+}
+
+.cs-darkTitle{
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cs-darkText{
+  color: rgba(230,231,232,0.86);
+  line-height: 1.65;
+  font-size: 14.5px;
+}
+
+/* MLS explainer card */
+.cs-mls{ background: #f4f4f4; padding: 70px 0; }
+
+.cs-mlsCard{
+  background: #f7f7f7;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 40px 34px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.10);
+}
+
+.cs-mlsGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.cs-mlsBlock{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  padding: 18px 16px;
+}
+
+.cs-mlsLabel{
+  font-weight: 800;
+  color: rgba(0,0,0,.70);
+  margin-bottom: 8px;
+}
+
+.cs-mlsText{
+  color: rgba(0,0,0,.65);
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.cs-nonboardCard{
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(37,37,38,0.62), rgba(18,18,18,0.86));
+  border: 1px solid rgba(190,175,135,0.18);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+  padding: 28px 26px;
+  margin-top: 14px;
+}
+
+.cs-nonboardText{
+  margin: 0;
+  color: rgba(230,231,232,0.86);
+  line-height: 1.7;
+}
+
+.cs-next{ background: #f4f4f4; padding: 70px 0; }
+
+.cs-nextCard{
+  background: #f7f7f7;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 40px 34px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.10);
+  text-align: center;
+}
+
+.cs-nextActions{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+@media (max-width: 980px){
+  .cs-boardGrid{ grid-template-columns: 1fr; }
+  .cs-twoCol{ grid-template-columns: 1fr; }
+  .cs-mlsGrid{ grid-template-columns: 1fr; }
+  .cs-mlsCard, .cs-nextCard{ padding: 28px 22px; }
+}

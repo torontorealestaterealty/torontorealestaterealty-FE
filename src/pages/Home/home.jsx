@@ -1,6 +1,6 @@
 import "./home.css";
 import heroBg from "../../assets/images/home/meetingHero.png";
-import ctaBg from "../../assets/images/home/agent.png";
+import ctaBg from "../../assets/images/home/agent.jpg";
 import searchIcon from "../../assets/images/home/resources/search.png";
 import handshakeIcon from "../../assets/images/home/resources/handshake.png";
 import buildingIcon from '../../assets/images/home/resources/building.png';
@@ -30,24 +30,18 @@ export default function Home() {
                         </h1>
 
                         <p className="home-hero-sub">
-                            Keep 100% of Your Commission.
                             <br />
                             No Desk Fees. No Franchise Fees. No Splits.
                         </p>
 
                         <div className="home-hero-ctaRow">
                             <a className="home-btn home-btn-gold" href="#home-apply">
-                                Apply to Join the Brokerage
-                            </a>
-                            <a className="home-btn home-btn-darkOutline" href="#home-schedule">
-                                Schedule a Private Call
+                                Keep 100% of Your Commission.
                             </a>
                         </div>
                     </div>
                 </div>
         </section>
-
-        {/* WHITE FEATURE CARDS */}
         <section id="home-cards" className="home-cards">
         <div className="home-container">
           <h2 className="home-section-title home-section-title--center">
@@ -100,8 +94,7 @@ export default function Home() {
         </div>
         </section>
 
-        {/* HOW IT WORKS STRIP */}
-        <section id="home-plans" className="home-how" style={{ backgroundImage: `url(${homeHowBg})` }}>
+        <section id="home-plans" className="home-how" >
 
             <div className="home-container">
             <h2 className="home-how-title">How It Works</h2>
@@ -138,69 +131,65 @@ export default function Home() {
             </div>
         </section>
 
-        {/* WHO WE WORK WITH (top card over image) */}
-        <section id="home-join" className="home-join" > 
-        <div className="home-container home-join-grid"  >
 
-            {/* LEFT – TOP */}
-            <div className="home-join-left home-join-top">
-            <h2 className="home-who-title">Who We Work With</h2>
 
-            <div className="home-who-columns">
-                <div className="home-who-col">
-                <h3 className="home-who-colTitle">New Agents</h3>
-                <ul className="home-who-list">
-                    <li>Mentorship.</li>
-                    <li>Systems.</li>
-                    <li>No pressure.</li>
-                </ul>
+        <section
+        id="home-join"
+        className="home-join2"
+        style={{ backgroundImage: `url(${ctaBg})` }}
+        >
+        <div className="home-join2-overlay" />
+
+        <div className="home-container home-join2-wrap">
+            <div className="home-join2-header">
+            <h2 className="home-join2-title">Who We Work With</h2>
+            <p className="home-join2-sub">
+                Built for new and experienced agents who want flexibility, support, and full commission control.
+            </p>
+            </div>
+
+            <div className="home-join2-grid">
+            <div className="home-join2-card">
+                <div className="home-join2-cardTop">
+                <div className="home-join2-tag">New Agents</div>
                 </div>
-
-                <div className="home-who-divider" />
-
-                <div className="home-who-col">
-                <h3 className="home-who-colTitle">Experienced Agents</h3>
-                <ul className="home-who-list">
-                    <li>No splits,</li>
-                    <li>Full control,</li>
-                    <li>Cloud-based brokerage.</li>
+                <ul className="home-join2-list">
+                <li>Mentorship & onboarding</li>
+                <li>Systems & templates</li>
+                <li>No pressure, clear steps</li>
                 </ul>
+            </div>
+
+            <div className="home-join2-card">
+                <div className="home-join2-cardTop">
+                <div className="home-join2-tag">Experienced Agents</div>
                 </div>
+                <ul className="home-join2-list">
+                <li>No splits — keep your commission</li>
+                <li>Full control over your business</li>
+                <li>Cloud-based brokerage support</li>
+                </ul>
             </div>
             </div>
 
-            {/* LEFT – BOTTOM */}
-            <div className="home-join-left home-join-bottom" style={{ backgroundImage: `url(${homeHowBg})`}} >
-                <h2 className="home-cta-title">
-                    Ready to Join a Brokerage<br />
-                    That Works for You?
-                </h2>
-
-                <div className="home-cta-buttons">
-                    <a className="home-btn home-btn-darkOutline" href="#home-applyForm">
-                    Apply Now
-                    </a>
-                    <a className="home-btn home-btn-gold" href="#home-schedule">
-                    Talk to Us First
-                    </a>
-            </div>
+            <div className="home-join2-ctaBar">
+            <div className="home-join2-ctaText">
+                <div className="home-join2-ctaTitle">Ready to join a brokerage that works for you?</div>
+                <div className="home-join2-ctaSub">Talk to us first, or apply in minutes.</div>
             </div>
 
-            <div
-            className="home-join-image"
-            style={{ backgroundImage: `url(${ctaBg})` }}
-            aria-hidden="true"
-            />
-
+            <div className="home-join2-actions">
+                <a className="home-btn home-btn-gold" href="#home-schedule">Talk to Us First</a>
+                <a className="home-btn home-btn-darkOutline" href="#home-applyForm">Apply Now</a>
+            </div>
+            </div>
         </div>
         </section>
 
 
 
-      {/* FOOTER (simple) */}
         <Footer />
 
-      {/* anchor targets */}
       <div id="home-schedule" className="home-anchor" />
       <div id="home-applyForm" className="home-anchor" />
       <div id="home-why" className="home-anchor" />

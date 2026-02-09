@@ -1,0 +1,97 @@
+/* OnePointARPage.css */
+/* This file assumes your TREB page CSS already defines:
+   .treb-boardPage, .treb-container, hero styles, buttons, benefits, pricing, etc. */
+
+.onepoint-page {}
+
+/* Slightly different hero overlay so it feels like a different page but same system */
+.onepoint-heroOverlay{
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.90) 0%, rgba(0,0,0,.58) 52%, rgba(0,0,0,.30) 100%),
+    linear-gradient(180deg, rgba(18,18,18,.70), rgba(0,0,0,.86));
+}
+
+/* Intro card extras */
+.onepoint-intro .onepoint-card{
+  border-radius: 18px;
+}
+
+.onepoint-regionRow{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.onepoint-pill{
+  display:inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.10);
+  color: rgba(0,0,0,.70);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* What's next section */
+.onepoint-next{
+  background: #f4f4f4;
+  padding: 70px 0;
+}
+
+.onepoint-nextCard{
+  background: #f7f7f7;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 40px 34px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.10);
+}
+
+.onepoint-steps{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.onepoint-step{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  padding: 18px 16px;
+}
+
+.onepoint-stepNum{
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: rgba(0,0,0,.35);
+  margin-bottom: 10px;
+}
+
+.onepoint-stepTitle{
+  font-weight: 700;
+  color: rgba(0,0,0,.82);
+  margin-bottom: 6px;
+}
+
+.onepoint-stepText{
+  color: rgba(0,0,0,.65);
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.onepoint-nextActions{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .onepoint-steps{ grid-template-columns: 1fr; }
+  .onepoint-nextCard{ padding: 28px 22px; }
+}

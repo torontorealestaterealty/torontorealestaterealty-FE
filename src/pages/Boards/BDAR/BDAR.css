@@ -1,0 +1,55 @@
+
+.bdar-heroOverlay{
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.90) 0%, rgba(0,0,0,.58) 52%, rgba(0,0,0,.30) 100%),
+    linear-gradient(180deg, rgba(18,18,18,.72), rgba(0,0,0,.88));
+}
+
+.bdar-card{
+  border-radius: 18px;
+}
+
+.bdar-regionRow{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.bdar-pill{
+  display:inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.10);
+  color: rgba(0,0,0,.70);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.bdar-next{
+  background: #f4f4f4;
+  padding: 70px 0;
+}
+
+.bdar-nextCard{
+  background: #f7f7f7;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 40px 34px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.10);
+  text-align: center;
+}
+
+.bdar-nextActions{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+@media (max-width: 980px){
+  .bdar-nextCard{ padding: 28px 22px; }
+}
