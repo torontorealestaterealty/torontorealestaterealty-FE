@@ -30,14 +30,16 @@ export default function Home() {
                         </h1>
 
                         <p className="home-hero-sub">
-                            <br />
-                            No Desk Fees. No Franchise Fees. No Splits.
+                          <br />
+                          100% commission real estate brokerage in Ontario with no monthly fees.
+                          <br />
+                          No desk fees. No franchise fees. No splits.
                         </p>
 
                         <div className="home-hero-ctaRow">
-                            <a className="home-btn home-btn-gold" href="#home-apply">
-                                Keep 100% of Your Commission.
-                            </a>
+                          <a className="home-btn home-btn-gold" href="#home-apply">
+                            Keep 100% of Your Commission. No monthly fees.
+                          </a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +72,7 @@ export default function Home() {
               <h3 className="home-infoCard-title">One Simple Plan. All Agents.</h3>
               <p className="home-infoCard-text">
                 No franchise fee. No desk fee. No commission splits. Keep 100%
-                commission with a straightforward transaction fee model.
+                commission with a straightforward transaction fee model and no monthly fees.
               </p>
               <div className="home-infoCard-action">
                 <a className="home-linkGold" href="#home-plans">View Plan →</a>
@@ -144,7 +146,8 @@ export default function Home() {
             <div className="home-join2-header">
             <h2 className="home-join2-title">Who We Work With</h2>
             <p className="home-join2-sub">
-                Built for new and experienced agents who want flexibility, support, and full commission control.
+              Built for new and experienced agents who want flexibility, support, and full commission control.
+              A 100% commission brokerage in Ontario with no monthly fees at all.
             </p>
             </div>
 

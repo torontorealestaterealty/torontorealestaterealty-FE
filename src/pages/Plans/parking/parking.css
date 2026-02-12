@@ -91,7 +91,7 @@
   color: rgba(0,0,0,.92);
   background: linear-gradient(180deg, #c8a440, #cfbb82);
   border: 1px solid rgba(255,199,44,.35);
-  box-shadow: 0 14px 34px rgba(0,0,0,.45);
+  box-shadow: 0 14px 34px rgba(0,0,0,.15);
 }
 
 .plan-btnGold:hover{ transform: translateY(-1px); filter: brightness(1.02); }
@@ -315,7 +315,7 @@
   padding: 30px 26px;
   background: #ffffff;
   border: 1px solid rgba(190,175,135,0.20);
-  box-shadow: 0 18px 60px rgba(0,0,0,.55);
+  box-shadow: 0 18px 30px rgba(0,0,0,.12);
   text-align: center;
   color: rgba(230,231,232,.90);
 }
@@ -343,7 +343,7 @@
 .plan-ctaFine{
   margin-top: 12px;
   font-size: 12px;
-  color: rgba(190,175,135,.75);
+  color: rgba(152, 122, 41, 0.75);
 }
 
 /* Responsive */

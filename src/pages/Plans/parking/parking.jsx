@@ -1,6 +1,6 @@
 import "./parking.css";
 import heroBg from "../../../assets/images/home/agent.jpg";
-
+import Footer from "../../../components/Footer/footer.jsx";
 export default function Parking() {
   return (
     <main className="plan-page">
@@ -131,6 +131,8 @@ export default function Parking() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }

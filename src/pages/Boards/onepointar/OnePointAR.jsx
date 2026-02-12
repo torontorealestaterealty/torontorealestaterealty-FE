@@ -158,7 +158,7 @@ export default function OnePointARPage() {
       <section className="treb-boardSection onepoint-next">
         <div className="treb-container">
           <div className="onepoint-nextCard">
-            <h2 className="treb-serifTitle">What’s Next?</h2>
+            <h2 className="onepoint-nextCard-title">What’s Next?</h2>
 
             <div className="onepoint-steps">
               <div className="onepoint-step">

@@ -34,12 +34,26 @@
 }
 
 .bdar-nextCard{
-  background: #f7f7f7;
+  background: linear-gradient(180deg, rgba(37, 37, 38, 0.62), rgba(18, 18, 18, 0.82));
   border: 1px solid rgba(0,0,0,.08);
   border-radius: 18px;
   padding: 40px 34px;
   box-shadow: 0 16px 40px rgba(0,0,0,.10);
   text-align: center;
+}
+
+.bdar-nextCardText{
+  color: rgba(230, 231, 232, 0.86);
+  line-height: 1.65;
+  font-size: 14.5px;
+}
+
+.bdar-nextCard-title{
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0 0 18px;
+  color: #ffffff;
 }
 
 .bdar-nextActions{

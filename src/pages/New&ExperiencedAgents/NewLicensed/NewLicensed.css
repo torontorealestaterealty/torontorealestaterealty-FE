@@ -1,0 +1,277 @@
+
+.nla-page { background: var(--black); }
+
+.nla-container{
+  width: min(var(--container), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nla-hero{
+  position: relative;
+  padding: 92px 0 78px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.nla-heroOverlay{
+  position: absolute;
+  inset: 0;
+}
+
+.nla-heroWrap{ position: relative; z-index: 1; max-width: 980px; }
+
+.nla-eyebrow{
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(190,175,135,.22);
+  color: rgba(230,231,232,.82);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.nla-heroTitle{
+  margin: 0 0 10px;
+  color: var(--white);
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.nla-heroSub{
+  margin: 0;
+  color: rgba(230,231,232,.84);
+  line-height: 1.8;
+  max-width: 96ch;
+}
+
+.nla-heroActions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.nla-heroNote{
+  margin-top: 14px;
+  color: rgba(190,175,135,.80);
+  font-size: 13px;
+}
+
+
+.nla-cardWhy {
+  padding: 42px 36px;
+}
+
+.nla-textIntro {
+  max-width: 88ch;
+  margin: 0 auto 28px;
+}
+
+.nla-whyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 10px;
+}
+
+.nla-whyItem {
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.04)
+  );
+}
+
+.nla-whyTitle {
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.nla-whyItem p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nla-whyGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Buttons */
+.nla-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: .01em;
+  transition: transform .12s ease, filter .12s ease, border-color .12s ease;
+}
+
+.nla-btnGold{
+  color: rgba(0,0,0,.92);
+  background: linear-gradient(180deg, #c8a440, #cfbb82);
+  border: 1px solid rgba(255,199,44,.35);
+  box-shadow: 0 14px 34px rgba(0,0,0,.15);
+}
+
+.nla-btnGold:hover{ transform: translateY(-1px); filter: brightness(1.02); }
+
+.nla-btnOutline{
+  color: rgba(255,199,44,.92);
+  background: rgba(18, 18, 18, 0.50);
+  border: 1px solid rgba(190,175,135,.30);
+}
+
+.nla-btnOutline:hover{ transform: translateY(-1px); border-color: rgba(255,199,44,.45); }
+
+/* SECTION */
+.nla-section{
+  background: #f4f4f4;
+  padding: 70px 0;
+  color: rgba(0,0,0,.86);
+}
+
+/* Cards */
+.nla-card{
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 28px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.12);
+  margin-top: 18px;
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+.nla-cardSoft{
+  background: linear-gradient(180deg, rgba(37,37,38,0.62), rgba(18,18,18,0.82));
+}
+
+.nla-title-why{
+  margin: 0 0 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+  color: black;
+}
+
+.nla-title-start{
+  margin: 0 0 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.nla-text-why{
+  margin: 0 auto;
+  max-width: 96ch;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.85;
+  text-align: center;
+}
+
+.nla-text-start{
+  margin: 0 auto;
+  max-width: 96ch;
+  color: rgba(230, 231, 232, .82);
+  line-height: 1.85;
+  text-align: center;
+}
+
+
+
+.nla-grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.nla-gridItem{
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+}
+
+.nla-gridTitle{
+  font-weight: 900;
+  color: rgba(0,0,0,.82);
+  margin: 0 0 8px;
+}
+
+.nla-gridText{
+  margin: 0;
+  color: rgba(0,0,0,.65);
+  line-height: 1.75;
+}
+
+.nla-cta{
+  margin-top: 18px;
+  border-radius: 22px;
+  padding: 32px 26px;
+  background: #ffffff;
+  border: 1px solid rgba(190,175,135,.20);
+  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+  text-align: center;
+  color: rgba(230,231,232,.90);
+}
+
+.nla-ctaTitle{
+  margin: 0 0 8px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+}
+
+.nla-ctaSub{
+  margin: 0 auto 16px;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.75;
+  max-width: 92ch;
+}
+
+.nla-ctaActions{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nla-ctaNote{
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(152, 122, 41, 0.75);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .nla-heroTitle{ font-size: 38px; }
+  .nla-grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px){
+  .nla-container{ width: min(var(--container), calc(100% - 32px)); }
+  .nla-hero{ padding: 78px 0 66px; }
+}

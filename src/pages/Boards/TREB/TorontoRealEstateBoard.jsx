@@ -162,7 +162,6 @@ export default function TorontoRealEstateBoardPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className="treb-boardCta" style={{ backgroundImage: `url(${ctaBg})` }}>
         <div className="treb-boardCta-overlay" />
         <div className="treb-container treb-boardCta-wrap">
@@ -191,7 +190,6 @@ export default function TorontoRealEstateBoardPage() {
         </div>
       </section>
 
-      {/* Smooth dark transition into global footer */}
       <div className="treb-footerBand">
         <Footer />
       </div>

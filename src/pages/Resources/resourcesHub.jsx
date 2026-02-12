@@ -1,12 +1,11 @@
 import { Link } from "react-router";
-import "./ResourcesHub.css";
+import "./resourcesHub.css";
 import heroBg from "../../assets/images/home/agent.jpg";
 import Footer from "../../components/Footer/footer.jsx";
 
 export default function ResourcesHub() {
   return (
     <main className="res-page">
-      {/* HERO */}
       <section className="res-hero" style={{ backgroundImage: `url(${heroBg})` }}>
         <div className="res-heroOverlay" />
 
@@ -18,29 +17,30 @@ export default function ResourcesHub() {
         </div>
       </section>
 
-      {/* CONTENT */}
       <section className="res-section">
         <div className="res-container">
           <div className="res-grid">
-            {/* Card 1 */}
             <article className="res-card">
               <div className="res-cardHead">
-                <div className="res-icon" aria-hidden="true">🏡</div>
+                {/* <div className="res-icon" aria-hidden="true">🏡</div> */}
                 <div className="res-cardHeadText">
-                  <h2 className="res-cardTitle">TRER Listing</h2>
-                  <p className="res-cardSub">What it is, how it works, and where it’s available</p>
+                  <h2 className="res-cardTitle">New and Experienced Agents</h2>
+                  <p className="res-cardSub">How we can help you succeed in real estate</p>
                 </div>
               </div>
 
               <div className="res-links">
-                <Link className="res-link" to="/resources/torontoreal/what-is">
-                  What is TorontoReal Listing
+                <Link className="res-link" to="/registering-with-reco">
+                  RECO + Real Estate Students
                 </Link>
-                <Link className="res-link" to="/resources/torontoreal/how-it-works">
-                  How TorontoReal Works
+                <Link className="res-link" to="/changing-market">
+                  New Agents in Today's Changing Market
                 </Link>
-                <Link className="res-link" to="/resources/torontoreal/service-area">
-                  Our Service Area
+                <Link className="res-link" to="/new-licensed-agents">
+                  Supporting Newly Licensed Agents
+                </Link>
+                <Link className="res-link" to="/experienced-agents">
+                    Experienced Agents
                 </Link>
               </div>
 
@@ -51,28 +51,18 @@ export default function ResourcesHub() {
               </div>
             </article>
 
-            {/* Card 2 */}
             <article className="res-card">
               <div className="res-cardHead">
-                <div className="res-icon" aria-hidden="true">📄</div>
+                {/* <div className="res-icon" aria-hidden="true">📄</div> */}
                 <div className="res-cardHeadText">
-                  <h2 className="res-cardTitle">Listings & Pricing</h2>
-                  <p className="res-cardSub">Fees, value, selling tips, and FAQs</p>
+                  <h2 className="res-cardTitle">FAQs</h2>
+                  <p className="res-cardSub">Frequently Asked Questions about Toronto Real Estate Realty</p>
                 </div>
               </div>
 
               <div className="res-links">
                 <Link className="res-link" to="/resources/listings-pricing/benefits">
-                  Benefits of selling with TorontoReal
-                </Link>
-                <Link className="res-link" to="/resources/listings-pricing/home-worth">
-                  How much is your home worth
-                </Link>
-                <Link className="res-link" to="/resources/listings-pricing/selling-privately">
-                  Selling privately
-                </Link>
-                <Link className="res-link" to="/resources/listings-pricing/faq">
-                  TorontoReal FAQ
+                  Parking your Real Estate License
                 </Link>
               </div>
 
@@ -83,28 +73,24 @@ export default function ResourcesHub() {
               </div>
             </article>
 
-            {/* Card 3 */}
             <article className="res-card">
               <div className="res-cardHead">
-                <div className="res-icon" aria-hidden="true">💳</div>
+                {/* <div className="res-icon" aria-hidden="true">💳</div> */}
                 <div className="res-cardHeadText">
-                  <h2 className="res-cardTitle">Payments & Support</h2>
+                  <h2 className="res-cardTitle">Resources</h2>
                   <p className="res-cardSub">Options, commissions, guidance, and help</p>
                 </div>
               </div>
 
               <div className="res-links">
                 <Link className="res-link" to="/resources/payments-support/options">
-                  Choose your selling options
+                 Non TREB Realtor and MLS Offers
                 </Link>
                 <Link className="res-link" to="/resources/payments-support/money-in-pocket">
-                  Money in your pocket
+                  Selling MLS Listings with a Parked RECO License
                 </Link>
                 <Link className="res-link" to="/resources/payments-support/tips">
-                  Trends and tips for sellers
-                </Link>
-                <Link className="res-link" to="/resources/payments-support/commission">
-                  How much commission should a seller offer?
+                  The Process of making offer for Parked RECO Realtors
                 </Link>
               </div>
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet, Link } from "react-router";
 import "./header.css";
 import logo from "../../assets/images/logo/logo.png";
+import ScrollToTop from "../ScrollToTop";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
@@ -13,6 +14,8 @@ export default function Header() {
 
   return (
     <>
+
+      <ScrollToTop />
       <header id="header-root" className="header">
         <div className="header-container">
           <Link to="/" className="header-brand">
@@ -38,15 +41,31 @@ export default function Header() {
               </button>
 
               <div className={`dropdown-menu ${openMenu === "plans" ? "is-open" : ""}`}>
-                <Link to="/parking" className="dropdown-item" onClick={closeMenu}>Parking And Active</Link>
-                <Link to="/full-time-agent-commissions" className="dropdown-item" onClick={closeMenu}>Full Time Agent Commissions</Link>
-                <Link to="/treb-or-non-treb-trading" className="dropdown-item" onClick={closeMenu}>TREB or NON TREB Trading</Link>
+                <Link to="/plans" className="dropdown-item" onClick={closeMenu}>Parking And Active</Link>
+                <Link to="/plans/fulltimeagents" className="dropdown-item" onClick={closeMenu}>Full Time Agent Commissions</Link>
+                <Link to="/plans/trading" className="dropdown-item" onClick={closeMenu}>TREB or NON TREB Trading</Link>
               </div>
             </div>
 
-            <Link to="/why" className="header-nav-item">
-              Why Us
-            </Link>
+
+            <div className="header-nav-item dropdown">
+              <button
+                type="button"
+                className="header-nav-link dropdown-trigger"
+                onClick={() => toggleMenu("why")}
+                aria-expanded={openMenu === "why"}
+              >
+                Why Us <span className="caret">▾</span>
+              </button>
+
+              <div className={`dropdown-menu ${openMenu === "why" ? "is-open" : ""}`}>
+                <Link to="/why" className="dropdown-item" onClick={closeMenu}>Why Toronto Real Estate Realty Plus</Link>
+                <Link to="/why/choosing-brokerage" className="dropdown-item" onClick={closeMenu}>Choosing the Right Real Estate Brokerage</Link>
+                <Link to="/why/about-us" className="dropdown-item" onClick={closeMenu}>About Us</Link>
+                <Link to="/why/cloud-vs-traditional" className="dropdown-item" onClick={closeMenu}>Full-Time Real Estate Brokerage</Link>
+
+              </div>
+            </div>
 
             <div className="header-nav-item dropdown">
               <button
@@ -75,7 +94,7 @@ export default function Header() {
           {/* CTA */}
           <div className="header-actions">
             <Link to="/apply" className="header-btn header-btn--primary">
-              Apply to Join
+              Sign Up
             </Link>
           </div>
         </div>

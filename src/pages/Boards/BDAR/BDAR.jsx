@@ -161,9 +161,9 @@ export default function BDARPage() {
       <section className="treb-boardSection bdar-next">
         <div className="treb-container">
           <div className="bdar-nextCard">
-            <h2 className="treb-serifTitle">Ready to Join Toronto Real Estate Realty Plus?</h2>
+            <h2 className="bdar-nextCard-title">Ready to Join Toronto Real Estate Realty Plus?</h2>
 
-            <p className="treb-mutedDark">
+            <p className="bdar-nextCardText">
               If you’re a BDAR REALTOR® looking for seamless MLS access, no commission splits, and the flexibility to work
               remotely while keeping 100% of your commission, Toronto Real Estate Realty Plus is the place for you.
             </p>
