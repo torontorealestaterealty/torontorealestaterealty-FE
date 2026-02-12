@@ -1,6 +1,6 @@
 import "./ChangingMarket.css";
-import heroBg from "../../../assets/images/home/agent.jpg";
-import Footer from "../../../components/Footer/footer.jsx";
+import heroBg from "../../../../assets/images/home/agent.jpg";
+import Footer from "../../../../components/Footer/footer.jsx";
 export default function NewAgentsChangingMarketPage() {
   return (
     <main className="mkt-page">

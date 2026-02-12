@@ -1,6 +1,6 @@
 import "./RegisteringWithRecoPage.css";
-import heroBg from "../../../assets/images/home/agent.jpg";
-import Footer from "../../../components/Footer/footer.jsx";
+import heroBg from "../../../../assets/images/home/agent.jpg";
+import Footer from "../../../../components/Footer/footer.jsx";
 export default function RegisteringWithRecoPage() {
   return (
     <main className="reco-page">

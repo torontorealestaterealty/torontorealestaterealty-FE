@@ -44,11 +44,11 @@ export default function ResourcesHub() {
                 </Link>
               </div>
 
-              <div className="res-cardFooter">
+              {/* <div className="res-cardFooter">
                 <Link className="res-cardCta" to="/resources/torontoreal">
                   View all <span aria-hidden="true">→</span>
                 </Link>
-              </div>
+              </div> */}
             </article>
 
             <article className="res-card">
@@ -61,16 +61,16 @@ export default function ResourcesHub() {
               </div>
 
               <div className="res-links">
-                <Link className="res-link" to="/resources/listings-pricing/benefits">
+                <Link className="res-link" to="/faq">
                   Parking your Real Estate License
                 </Link>
               </div>
 
-              <div className="res-cardFooter">
+              {/* <div className="res-cardFooter">
                 <Link className="res-cardCta" to="/resources/listings-pricing">
                   View all <span aria-hidden="true">→</span>
                 </Link>
-              </div>
+              </div> */}
             </article>
 
             <article className="res-card">

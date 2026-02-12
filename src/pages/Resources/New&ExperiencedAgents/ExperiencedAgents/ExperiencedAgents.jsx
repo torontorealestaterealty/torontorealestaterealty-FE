@@ -1,6 +1,6 @@
 import "./ExperiencedAgents.css";
-import heroBg from "../../../assets/images/home/agent.jpg";
-
+import heroBg from "../../../../assets/images/home/agent.jpg";
+import Footer from "../../../../components/Footer/footer.jsx";
 export default function ExperiencedAgents() {
   return (
     <main className="exp-page">

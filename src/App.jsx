@@ -15,10 +15,16 @@ import WhyUs from './pages/Why/WhyUs/whyUs.jsx';
 import ChoosingBrokerage from './pages/Why/ChoosingBrokerage/choosingBrokerage.jsx';
 import AboutUs from './pages/Why/AboutUs/aboutUs.jsx';
 import CloudVsTraditionalBrokeragePage from './pages/Why/CloudVsTraditionalBrokerage/cloudVsTraditionalBrokerage.jsx';
-import RegisteringWithRecoPage from './pages/New&ExperiencedAgents/RegisteringWithRecoPage/RegisteringWithRecoPage.jsx';
-import NewAgentsChangingMarketPage from './pages/New&ExperiencedAgents/ChangingMarket/ChangingMarket.jsx';
-import NewLicensedAgentsPage from './pages/New&ExperiencedAgents/NewLicensed/NewLicensed.jsx';
-import ExperiencedAgents from './pages/New&ExperiencedAgents/ExperiencedAgents/ExperiencedAgents.jsx';
+import RegisteringWithRecoPage from './pages/Resources/New&ExperiencedAgents/RegisteringWithRecoPage/RegisteringWithRecoPage.jsx';
+import NewAgentsChangingMarketPage from './pages/Resources/New&ExperiencedAgents/ChangingMarket/ChangingMarket.jsx';
+import NewLicensedAgentsPage from './pages/Resources/New&ExperiencedAgents/NewLicensed/NewLicensed.jsx';
+import ExperiencedAgents from './pages/Resources/New&ExperiencedAgents/ExperiencedAgents/ExperiencedAgents.jsx';
+import FAQ from './pages/Resources/FAQ/FAQ.jsx';
+import FAQHub from './pages/Resources/FAQ/FAQHub.jsx';
+import ParkingLicenseFAQ from './pages/Resources/FAQ/ParkingLicense.jsx';
+import MLSBoardAccessFAQ from './pages/Resources/FAQ/MLSBoardAccess.jsx';
+import SupportServicesFAQ from './pages/Resources/FAQ/SupportServices.jsx';
+import PaymentsFeesFAQ from './pages/Resources/FAQ/PaymentsFees.jsx';
 const router = createBrowserRouter([
 
   {element:<Home/>, path:'/home'},
@@ -94,6 +100,30 @@ const router = createBrowserRouter([
         {
           path:'experienced-agents',
           element: <ExperiencedAgents/>
+        },
+        {
+          path:'faq',
+          element: <FAQ/>
+        },
+        {
+          path:'resources/faq',
+          element: <FAQHub/>
+        },
+        {
+          path:'resources/faq/parking-license',
+          element: <ParkingLicenseFAQ/>
+        },
+        { 
+          path:'resources/faq/mls-board-access',
+          element: <MLSBoardAccessFAQ/>
+        },
+        { 
+          path:'resources/faq/support-services',
+          element: <SupportServicesFAQ/>
+        },
+        {
+          path:'resources/faq/payments-fees',
+          element: <PaymentsFeesFAQ/>
         }
       ]}
   ])

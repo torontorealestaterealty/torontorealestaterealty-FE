@@ -1,6 +1,6 @@
 import "./NewLicensed.css";
-import heroBg from "../../../assets/images/home/agent.jpg";
-import Footer from "../../../components/Footer/footer.jsx";
+import heroBg from "../../../../assets/images/home/agent.jpg";
+import Footer from "../../../../components/Footer/footer.jsx";
 export default function NewLicensedAgentsPage() {
   return (
     <main className="nla-page">
